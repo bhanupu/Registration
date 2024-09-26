@@ -1,4 +1,6 @@
 import javax.swing.*;
+import javax.swing.border.BevelBorder;
+import javax.swing.border.Border;
 import java.awt.*;
 public class Registration {
     String dates[] =
@@ -32,6 +34,7 @@ public class Registration {
     JComboBox date,month,year;
     JCheckBox term;
     JButton b1;
+    Color c = new Color(153-102- 0);
     Registration() {
         f = new JFrame("Registration Form");
         f.setLayout(null);
@@ -81,6 +84,19 @@ public class Registration {
         term.setBounds(150,500+30,220,40);
         b1 = new JButton("Submit");
         b1.setBounds(200,570+30,100,30);
+
+        b1.setBackground(Color.orange);
+        t1.setBorder(new BevelBorder(BevelBorder.LOWERED));
+        t2.setBorder(new BevelBorder(BevelBorder.LOWERED));
+        t3.setBorder(new BevelBorder(BevelBorder.LOWERED));
+        t4.setBorder(new BevelBorder(BevelBorder.LOWERED));
+        t5.setBorder(new BevelBorder(BevelBorder.LOWERED));
+        date.setBorder(new BevelBorder(BevelBorder.LOWERED));
+        month.setBorder(new BevelBorder(BevelBorder.LOWERED));
+        year.setBorder(new BevelBorder(BevelBorder.LOWERED));
+        term.setBorder(new BevelBorder(BevelBorder.LOWERED));
+        b1.setBorder(new BevelBorder(BevelBorder.LOWERED));
+
         f.add(l8);
         f.add(l1);
         f.add(t1);
